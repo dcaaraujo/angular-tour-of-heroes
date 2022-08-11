@@ -1,0 +1,8 @@
+<h1>Top Heroes</h1>
+<section id="heroes-menu">
+  <mat-spinner *ngIf="heroes.length == 0" [diameter]="40"></mat-spinner>
+  <button *ngFor="let hero of heroes" mat-raised-button routerLink="/detail/{{hero.id}}">
+    {{hero.name}}
+  </button>
+</section>
+<app-hero-search></app-hero-search>

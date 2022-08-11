@@ -1,0 +1,28 @@
+#heroes {
+  margin: 2em;
+}
+
+mat-card {
+  width: 30%;
+  margin: 1em 0;
+}
+
+form {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+#add-hero-button {
+  width: 20%;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+mat-divider {
+  margin: 1em 0;
+}

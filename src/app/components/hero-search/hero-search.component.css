@@ -1,0 +1,15 @@
+#search-component {
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#hero-search-form {
+  width: 80%;
+}
+
+#hero-form-field {
+  width: 100%;
+}

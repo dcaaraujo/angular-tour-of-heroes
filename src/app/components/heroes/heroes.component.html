@@ -1,0 +1,21 @@
+<div id="heroes">
+  <h1>My Heroes</h1>
+  <form>
+    <mat-form-field appearance="fill">
+      <mat-label>Hero name</mat-label>
+      <input #heroName matInput>
+    </mat-form-field>
+    <button (click)="add(heroName.value); heroName.value=''" id="add-hero-button" mat-raised-button type="button">
+      Add hero
+    </button>
+  </form>
+  <mat-divider></mat-divider>
+  <mat-spinner *ngIf="heroes.length == 0" [diameter]="40"></mat-spinner>
+  <mat-card *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+    <mat-card-title>{{hero.name}}</mat-card-title>
+    <mat-card-subtitle>{{hero.id}}</mat-card-subtitle>
+    <mat-card-actions>
+      <button (click)="delete(hero)" mat-flat-button type="button">Delete</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,14 @@
+#hero-details {
+  margin: 2em;
+}
+
+form {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+button {
+  margin-right: 1em;
+}
